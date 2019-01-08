@@ -1,3 +1,6 @@
+
+/**************   Solution #1    ********************************************************************************************/
+
 function rot13(str){
     let rotCharArray = [];
     let regex = /[A-Z]/;
@@ -15,6 +18,17 @@ function rot13(str){
 rot13("SERR PBQR PNZC"); // decode to FREE CODE CAMP
 rot13("SERR CVMMN!"); // FREE PIZZA!
 
+
+
+
+/**************   Solution #2    ********************************************************************************************/
+
+function rot(str) {
+   return str.replace(/[A-Z]/g, char => String.fromCharCode(char.charCodeAt(0) % 26 + 65));
+}
+// [A]  65 % 26 ⇔ 13 + 65 =  78 [N]
+// [B]  66 % 26 ⇔ 14 + 65 =  79 [O]
+// ......
 
 
 
