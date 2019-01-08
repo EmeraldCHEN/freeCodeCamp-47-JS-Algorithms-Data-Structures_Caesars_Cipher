@@ -10,6 +10,7 @@ function rot13(str){
             rotCharArray.push(strArray[x].charCodeAt());
         }
     }
+    // The apply() method accepts arguments in an array and the first argument (null) does not matter, it could be " ", 0, etc.
     return String.fromCharCode.apply(null, rotCharArray);
 
 
@@ -17,3 +18,10 @@ function rot13(str){
 
 
 rot13("SERR PBQR PNZC");
+
+
+
+
+
+// Retrieved from
+//https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher/
